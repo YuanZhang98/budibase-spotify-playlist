@@ -1,6 +1,6 @@
 {
-  "name": "Sportify-playlist",
-  "version": "1.0.0",
+  "name": "Spotify-playlist",
+  "version": "1.0.1",
   "description": "An amazing Budibase component!",
   "license": "MIT",
   "svelte": "index.js",
