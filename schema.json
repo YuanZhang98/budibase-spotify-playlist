@@ -1,0 +1,92 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "Spotify-playlist",
+    "friendlyName": "Spotify-playlist",
+    "description": "An amazing Budibase component!",
+    "icon": "Text",
+    "settings": [
+      {
+        "type": "text",
+        "key": "playlistOneName",
+        "label": "Playlist1 name"
+      },
+      {
+        "type": "text",
+        "key": "playlistOneUrl",
+        "label": "Playlist1 url"
+      },
+      {
+        "type": "text",
+        "key": "playlistTwoName",
+        "label": "Playlist2 name"
+      },
+      {
+        "type": "text",
+        "key": "playlistTwoUrl",
+        "label": "Playlist2 url"
+      },
+      {
+        "type": "text",
+        "key": "playlistThreeName",
+        "label": "Playlist3 name"
+      },
+      {
+        "type": "text",
+        "key": "playlistThreeUrl",
+        "label": "Playlist3 url"
+      },
+      {
+        "type": "text",
+        "key": "playlistFourName",
+        "label": "Playlist4 name"
+      },
+      {
+        "type": "text",
+        "key": "playlistFourUrl",
+        "label": "Playlist4 url"
+      },
+      {
+        "type": "text",
+        "key": "playlistFiveName",
+        "label": "Playlist5 name"
+      },
+      {
+        "type": "text",
+        "key": "playlistFiveUrl",
+        "label": "Playlist5 url"
+      },
+      {
+        "type": "text",
+        "key": "playlistSixName",
+        "label": "Playlist6 name"
+      },
+      {
+        "type": "text",
+        "key": "playlistSixUrl",
+        "label": "Playlist6 url"
+      },
+      {
+        "type": "text",
+        "key": "playlistSevenName",
+        "label": "Playlist7 name"
+      },
+      {
+        "type": "text",
+        "key": "playlistSevenUrl",
+        "label": "Playlist7 url"
+      },
+      {
+        "type": "text",
+        "key": "playlistEightName",
+        "label": "Playlist8 name"
+      },
+      {
+        "type": "text",
+        "key": "playlistEightUrl",
+        "label": "Playlist8 url"
+      }
+    ]
+  }
+}
