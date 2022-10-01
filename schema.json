@@ -1,0 +1,11 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "Spotify-playlist",
+    "friendlyName": "Spotify-playlist",
+    "description": "An amazing Budibase component!",
+    "icon": "Text",
+    "settings": []
+  }
+}
