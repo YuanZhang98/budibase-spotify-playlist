@@ -3,22 +3,7 @@
 
     const {styleable} = getContext("sdk")
     const component = getContext("component")
-    export let playlistOneUrl = 'https://open.spotify.com/playlist/6m044n8wYzaKq5nDVW0iKX?si=cd41cd9900bb4a9d';
-    export let playlistTwoUrl = 'https://open.spotify.com/playlist/37i9dQZF1EQoqCH7BwIYb7?si=590a0c06f9634aa3';
-    export let playlistThreeUrl = 'https://open.spotify.com/playlist/37i9dQZF1DWZqd5JICZI0u?si=f919fb6c0d11414a';
-    export let playlistFourUrl = 'https://open.spotify.com/playlist/37i9dQZF1DWWvhKV4FBciw?si=f6d5f1a1adfc4998';
-    export let playlistFiveUrl = 'https://open.spotify.com/playlist/37i9dQZF1DWXRqgorJj26U?si=c275e9173a9f491a';
-    export let playlistSixUrl = 'https://open.spotify.com/playlist/2XlWXSTD1AYi4MIhhKnqCU?si=bb969ba0e61d494c';
-    export let playlistSevenUrl = 'https://open.spotify.com/playlist/5TDtuKDbOhrfW7C58XnriZ?si=7b45e5dbb77d4d69';
-    export let playlistEightUrl = 'https://open.spotify.com/playlist/37i9dQZF1DX9tPFwDMOaN1?si=6a30177571ef41b5';
-    export let playlistOneName = 'Pride 🏳‍🌈';
-    export let playlistTwoName = 'R&B';
-    export let playlistThreeName = 'Meditation';
-    export let playlistFourName = 'Funk & Soul';
-    export let playlistFiveName = 'Rock';
-    export let playlistSixName = 'Country';
-    export let playlistSevenName = 'Pop';
-    export let playlistEightName = 'K-Pop';
+    export let dataProvider
 
     let urlList = "https://open.spotify.com/embed/playlist/37i9dQZF1DWZqd5JICZI0u?utm_source=generator&theme=0"
 
@@ -26,16 +11,10 @@
         return url.replace('playlist', 'embed/playlist');
     }
 
-    $: playlists = [
-        { name: playlistOneName, url: addEmbed(playlistOneUrl) },
-        { name: playlistTwoName, url: addEmbed(playlistTwoUrl) },
-        { name: playlistThreeName, url: addEmbed(playlistThreeUrl) },
-        { name: playlistFourName, url: addEmbed(playlistFourUrl) },
-        { name: playlistFiveName, url: addEmbed(playlistFiveUrl) },
-        { name: playlistSixName, url: addEmbed(playlistSixUrl) },
-        { name: playlistSevenName, url: addEmbed(playlistSevenUrl) },
-        { name: playlistEightName, url: addEmbed(playlistEightUrl) },
-    ];
+    $: playlists = dataProvider?.rows?.map((obj) => ({
+            name: obj.Name,
+            url: addEmbed(obj.Url),
+        })) ?? [];
 </script>
 
 <div use:styleable={$component.styles} id="spotify-playlist" class="container">
